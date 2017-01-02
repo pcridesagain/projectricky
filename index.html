@@ -6,16 +6,111 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Yup</title>
+        <title>SlopeJunkie</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
         <style>
-        body{
-            background-image: url("images/blakedub.jpg");
-            background-size: 200px 267px;
+        body {
+            background-image: url(images/bg.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #fff;
+            font-family: 'Nunito Sans', sans-serif;
+            color: #676C84;
+            margin: 5%;
+        }
+        .container{
+            width: 95%;
+            margin: 0 auto;
+        }
+        .copy{
+            float: left;
+            width: 40%;
+        }
+        p, h2, h1{
+            /*width: 480px;*/
+        }
+        p, h2{
+            font-size: 18px;
+            font-weight: 400;
+        }
+        h2{
+            margin-top: 55%;
+        }
+        h1{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1;
+            color: #535870;
+        }
+        .pics{
+            width: 60%;
+            float: right;
+        }
+        .pics img{
+            /*height: 651px;
+            width: 674px;*/
+            height: 90%;
+            width: 90%;
+            float: right;
+        }
+        a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px 36px;
+            border: 1px solid #676C84;
+            color: #676C84;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+
+        @media only screen and (max-width: 860px) {
+            body {
+                background-image: url(images/bg.png);
+            }
+            .pics{
+                display: none;
+            }
+            .copy{
+                width: 100%;
+                text-align: center;
+            }
+            h2{
+                margin-top: 30%;
+            }
         }
         </style>
+        <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+        <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"ace59073ac0f793335eae9866","lid":"36d4efa1df"}) })</script> -->
+
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script type="text/javascript">
+function showMailingPopUp() {
+    console.log("worked");
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"ace59073ac0f793335eae9866","lid":"36d4efa1df"}) })
+};
+
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+</script>
     </head>
     <body>
+        <div class="container">
+            <div class="copy">
+                <p>slopejunkie.com</p>
+                <h2>the price of lift tickets is to damn high</h2>
+                <h1>WANNA GET HUGE LOCAL DISCOUNTS SENT TO YOU EVERY MORNING?</h1>
+                <a href="#" onclick="showMailingPopUp()">join slopejunkie beta</a>
+            </div>
+            <div class="pics">
+                <img src="images/pics.png"/>
+            </div>
+        </div>
     </body>
+
+
 </html>
