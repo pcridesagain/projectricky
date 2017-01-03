@@ -12,15 +12,17 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
         
-        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
+        <script>
+            var overlay = document.getElementById('overlay');
+
+            function openModal(){
+                overlay.classList.remove("is-hidden");
+            }
+
+            function closeModal(){
+                overlay.classList.add("is-hidden");
+            }
         </script>
-        <script type="text/javascript">
-        function go(){
-            console.log("called");
-            require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"ace59073ac0f793335eae9866","lid":"36d4efa1df"}) });
-        }
-        </script>
-        
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -40,12 +42,21 @@
                 <p>slopejunkie.com</p>
                 <h2>the price of lift tickets is to damn high</h2>
                 <h1>WANNA GET HUGE LOCAL DISCOUNTS SENT TO YOU EVERY MORNING?</h1>
-                <a href="javascript:go();">join slopejunkie beta</a>
+                <a onclick="openModal();" href="#">join slopejunkie beta</a>
             </div>
             <div class="pics">
                 <img src="images/pics.png"/>
             </div>
         </div>
+
+        <div class="overlay is-hidden" id="overlay">
+            <div class="modal-content">
+                <span class="button-close" onclick="closeModal();"></span>
+                <h3>Modal Heading</h3>
+                <p>Modal Content</p>
+            </div>
+        </div>
+
     </body>
 
 
