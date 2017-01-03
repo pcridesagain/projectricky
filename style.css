@@ -1,0 +1,71 @@
+        body {
+            background-image: url(images/bg.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #fff;
+            font-family: 'Nunito Sans', sans-serif;
+            color: #676C84;
+            margin: 5%;
+        }
+        .container{
+            width: 95%;
+            margin: 0 auto;
+        }
+        .copy{
+            float: left;
+            width: 40%;
+        }
+        p, h2, h1{
+            /*width: 480px;*/
+        }
+        p, h2{
+            font-size: 18px;
+            font-weight: 400;
+        }
+        h2{
+            margin-top: 55%;
+        }
+        h1{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1;
+            color: #535870;
+        }
+        .pics{
+            width: 60%;
+            float: right;
+        }
+        .pics img{
+            /*height: 651px;
+            width: 674px;*/
+            height: 90%;
+            width: 90%;
+            float: right;
+        }
+        a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px 36px;
+            border: 1px solid #676C84;
+            color: #676C84;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+
+        @media only screen and (max-width: 860px) {
+            body {
+                background-image: url(images/bg.png);
+            }
+            .pics{
+                display: none;
+            }
+            .copy{
+                width: 100%;
+                text-align: center;
+            }
+            h2{
+                margin-top: 30%;
+            }
+        }
