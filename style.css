@@ -75,7 +75,7 @@ box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.28);
             left: 0;
             top: 420px;
         }
-        a{
+        a.abutton{
             text-decoration: none;
             display: inline-block;
             background: #F77800;
@@ -85,7 +85,7 @@ box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.28);
             font-size: 12px;
             margin-top: 16px;
         }
-        a:hover{
+        a.abutton:hover{
             background: #DD6B00;
         }
         .left{
@@ -93,6 +93,26 @@ box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.28);
         }
         .clear{
             clear: both;
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: #fff;
+            text-align: center;
+            padding: 0, 4px, 0, 4px;
+            border-top: 1px solid #E8E8E8;
+            z-index: 100;
+        }
+        .footer p{
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .footer a{
+            color: #F77800;
+            font-weight: 700;
         }
 
         @media only screen and (max-width: 860px) {
