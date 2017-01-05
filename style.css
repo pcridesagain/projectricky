@@ -29,6 +29,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f0ec', end
             font-size: 18px;
             font-weight: 400;
         }
+        p.sub{
+            font-size: 15px;
+            width: 440px;
+        }
         h2{
             margin-top: 55%;
         }
